@@ -25,8 +25,9 @@ class EventsController < ApplicationController
   def event_params
     params.require(:event).permit(:title, :info, :date_time, :nr_guests)
   end
-
+  
   def flash_message
     flash[:notice] = 'Your event has been added'
   end
+  
 end
